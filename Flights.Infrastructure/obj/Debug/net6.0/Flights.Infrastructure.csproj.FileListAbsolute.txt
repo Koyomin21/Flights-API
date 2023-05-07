@@ -1,0 +1,17 @@
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Infrastructure\bin\Debug\net6.0\Flights.Infrastructure.deps.json
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Infrastructure\bin\Debug\net6.0\Flights.Infrastructure.dll
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Infrastructure\bin\Debug\net6.0\Flights.Infrastructure.pdb
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Infrastructure\obj\Debug\net6.0\Flights.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Infrastructure\obj\Debug\net6.0\Flights.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Infrastructure\obj\Debug\net6.0\Flights.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Infrastructure\obj\Debug\net6.0\Flights.Infrastructure.AssemblyInfo.cs
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Infrastructure\obj\Debug\net6.0\Flights.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Infrastructure\obj\Debug\net6.0\Flights.Infrastructure.dll
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Infrastructure\obj\Debug\net6.0\refint\Flights.Infrastructure.dll
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Infrastructure\obj\Debug\net6.0\Flights.Infrastructure.pdb
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Infrastructure\obj\Debug\net6.0\ref\Flights.Infrastructure.dll
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Infrastructure\bin\Debug\net6.0\Flights.Application.dll
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Infrastructure\bin\Debug\net6.0\Flights.Domain.dll
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Infrastructure\bin\Debug\net6.0\Flights.Application.pdb
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Infrastructure\bin\Debug\net6.0\Flights.Domain.pdb
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Infrastructure\obj\Debug\net6.0\Flights.Infrastructure.csproj.CopyComplete
