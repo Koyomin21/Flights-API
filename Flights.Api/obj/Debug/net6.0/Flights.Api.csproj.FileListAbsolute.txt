@@ -34,3 +34,14 @@ C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\Flights.Ap
 C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\Flights.Infrastructure.pdb
 C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\Flights.Domain.pdb
 C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
