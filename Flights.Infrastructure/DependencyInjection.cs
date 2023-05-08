@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Flights.Infrastructure.Services.Authentication;
 using Flights.Infrastructure.SqlServer;
 using Microsoft.EntityFrameworkCore;
+using Flights.Application.Common.Interfaces.SqlServer;
 
 namespace Flights.Infrastructure;
 
@@ -17,11 +18,13 @@ public static class DependencyInjection
         services.Configure<JwtSettings>(configuration.GetSection(JwtSettings.SectionName));
         services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
         services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
+        services.AddSingleton<IPasswordHashingService, PasswordHashingService>();
 
         services.AddDbContext<ApplicationDbContext>(options=> options.UseSqlServer(
             configuration.GetConnectionString("MainConnectionString"),
-            b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)
+            b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.GetName().Name)
         ));
+        services.AddScoped<IUserRepository, UserRepository>();
 
         return services;
     }

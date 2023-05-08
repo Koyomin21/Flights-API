@@ -1,10 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Flights.Application.Services.Authentication;
 using Flights.Contracts.Authentication;
 using Microsoft.AspNetCore.Mvc;
+using MediatR;
+using Flights.Application.Authentication.Commands.Register;
+using Flights.Application.Authentication.Queries.Login;
 
 namespace Flights.Api.Controllers;
 
@@ -12,25 +10,28 @@ namespace Flights.Api.Controllers;
 [Route("api/auth")]
 public class AuthenticationController: ControllerBase
 {
+    private readonly IMediator _mediator;
 
-    private readonly IAuthenticationService _authenticationService;
-
-    public AuthenticationController(IAuthenticationService authenticationService) 
+    public AuthenticationController(IMediator mediator) 
     {
-        _authenticationService = authenticationService;
+        _mediator = mediator;
     }
 
     [Route("register")]
-    public IActionResult Register(RegisterRequest request)
+    public async Task<IActionResult> RegisterAsync(RegisterRequest request)
     {
-        var result = _authenticationService.Register(request.Username, request.Password);
+        var command = new RegisterCommand(request.Username, request.Password);
+        var result = await _mediator.Send(command);
+
         return Ok(result);
     }
 
     [Route("login")]
-    public IActionResult Login(LoginRequest request)
+    public async Task<IActionResult> Login(LoginRequest request)
     {
-        var result = _authenticationService.Login(request.Username, request.Password);
+        var query = new LoginQuery(request.Username, request.Password);
+        var result = await _mediator.Send(query);
+
         return Ok(result);
     }
 }

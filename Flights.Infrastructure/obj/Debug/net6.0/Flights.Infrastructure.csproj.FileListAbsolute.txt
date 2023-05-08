@@ -15,3 +15,5 @@ C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Infrastructure\bin\Debug\net6.0
 C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Infrastructure\bin\Debug\net6.0\Flights.Application.pdb
 C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Infrastructure\bin\Debug\net6.0\Flights.Domain.pdb
 C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Infrastructure\obj\Debug\net6.0\Flights.Infrastructure.csproj.CopyComplete
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Infrastructure\bin\Debug\net6.0\Flights.Infrastructure.runtimeconfig.json
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Infrastructure\obj\Debug\net6.0\Flights.Infrastructure.genruntimeconfig.cache

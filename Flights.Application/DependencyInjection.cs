@@ -1,14 +1,13 @@
-using Flights.Application.Services.Authentication;
 using Microsoft.Extensions.DependencyInjection;
+using MediatR;
 
 namespace Flights.Application;
-
 
 public static class DependencyInjection
 {
     public static IServiceCollection AddApplication(this IServiceCollection services) 
     {
-        services.AddScoped<IAuthenticationService, AuthenticationService>();
+        services.AddMediatR(x => x.RegisterServicesFromAssemblies(typeof(DependencyInjection).Assembly));
 
         return services;
     }
