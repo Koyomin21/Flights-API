@@ -4,6 +4,10 @@ using MediatR;
 using Flights.Application.Authentication.Commands.Register;
 using Flights.Application.Authentication.Queries.Login;
 using Microsoft.AspNetCore.Authorization;
+using MapsterMapper;
+using Flights.Contracts.Flights;
+using Flights.Application.Flights.Queries;
+using Flights.Application.Flights.Queries.Common;
 
 namespace Flights.Api.Controllers;
 
@@ -12,17 +16,22 @@ namespace Flights.Api.Controllers;
 [Authorize]
 public class FlightController: ControllerBase
 {
-    private readonly IMediator _mediator;
+    private readonly ISender _mediator;
+    private readonly IMapper _mapper;
 
-    public FlightController(IMediator mediator) 
+    public FlightController(ISender mediator, IMapper mapper) 
     {
         _mediator = mediator;
+        _mapper = mapper;
     }
 
     [HttpGet]
-    public IActionResult GetFlights() 
+    public async Task<IActionResult> GetFlights([FromBody] GetFlightsRequest request) 
     {
-        return Ok("Success");
+        var query = _mapper.Map<GetFlightsQuery>(request);// map object;
+        var result = await _mediator.Send(query);
+
+        return Ok(_mapper.Map<List<FlightDTO>>(result));
     }
 
     

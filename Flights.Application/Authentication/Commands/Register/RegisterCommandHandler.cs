@@ -23,7 +23,7 @@ public class RegisterCommandHandler : IRequestHandler<RegisterCommand, Authentic
 
     public async Task<AuthenticationResult> Handle(RegisterCommand request, CancellationToken cancellationToken)
     {
-        if(_userRepository.GetUserByUsername(request.Username) is not null) 
+        if(await _userRepository.GetUserByUsername(request.Username) is not null) 
         {
             throw new DuplicateUsernameException();
         }
@@ -35,7 +35,7 @@ public class RegisterCommandHandler : IRequestHandler<RegisterCommand, Authentic
             RoleId = 1
         };
 
-        _userRepository.Add(user);
+        await _userRepository.Add(user);
         
         var token = _jwtTokenGenerator.GenerateToken(user.Id, user.Username, user.Role.Code);
 

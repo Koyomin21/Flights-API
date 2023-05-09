@@ -4,6 +4,6 @@ namespace Flights.Application.Common.Interfaces.SqlServer;
 
 public interface IUserRepository
 {
-    User? GetUserByUsername(string username);
-    void Add(User user);   
+    Task<User?> GetUserByUsername(string username);
+    Task Add(User user);   
 }

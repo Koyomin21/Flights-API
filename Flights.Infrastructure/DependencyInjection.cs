@@ -28,6 +28,7 @@ public static class DependencyInjection
             b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.GetName().Name)
         ));
         services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<IFlightRepository, FlightRepository>();
         
 
         return services;
