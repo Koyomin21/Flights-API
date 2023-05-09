@@ -16,6 +16,8 @@ builder.Services
 
 var app = builder.Build();
 
+app.UseSwagger();
+app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Flights API V1"));
 app.UseExceptionHandler("/error");
 app.UseHttpsRedirection();
 app.UseAuthentication();

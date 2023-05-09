@@ -20,7 +20,8 @@ public class AuthenticationController: ControllerBase
         _mapper = mapper;
     }
 
-    [Route("register")]
+
+    [HttpPost("register")]
     public async Task<IActionResult> RegisterAsync([FromBody] RegisterRequest request)
     {
         var command = _mapper.Map<RegisterCommand>(request);
@@ -29,7 +30,7 @@ public class AuthenticationController: ControllerBase
         return Ok(_mapper.Map<AuthenticationResponse>(result));
     }
 
-    [Route("login")]
+    [HttpPost("login")]
     public async Task<IActionResult> Login([FromBody] LoginRequest request)
     {
         var query = _mapper.Map<LoginQuery>(request);

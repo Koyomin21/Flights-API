@@ -102,3 +102,7 @@ C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\Mapster.De
 C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\FluentValidation.dll
 C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\System.Web.Http.dll
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\Swashbuckle.Core.dll

@@ -9,6 +9,7 @@ public class ErrorController : ControllerBase
 {
     
     [Route("/error")]
+    [HttpGet]
     public IActionResult Error() 
     {
         Exception? exception = HttpContext.Features.Get<IExceptionHandlerFeature>()?.Error;

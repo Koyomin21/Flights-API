@@ -25,7 +25,7 @@ public class FlightController: ControllerBase
         _mapper = mapper;
     }
 
-    [HttpGet]
+    [HttpPost("all")]
     public async Task<IActionResult> GetFlights([FromBody] GetFlightsRequest request) 
     {
         var query = _mapper.Map<GetFlightsQuery>(request);// map object;
