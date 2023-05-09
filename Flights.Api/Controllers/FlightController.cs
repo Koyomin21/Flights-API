@@ -43,5 +43,15 @@ public class FlightController: ControllerBase
 
         return Ok(_mapper.Map<FlightDTO>(result));
     }
+
+    [Authorize(Roles = "Moderator")]
+    [HttpPatch("{id}")]
+    public async Task<IActionResult> UpdateFlightStatus([FromRoute] int id, [FromBody] UpdateFlightStatusRequest request)
+    {
+        var command = _mapper.Map<UpdateFlightStatusCommand>((id, request));
+        var result = await _mediator.Send(command);
+
+        return Ok(_mapper.Map<FlightDTO>(result));
+    }
     
 }

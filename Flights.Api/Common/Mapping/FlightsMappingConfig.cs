@@ -21,6 +21,9 @@ public class FlightsMappingConfig : IRegister
 
         config.NewConfig<CreateFlightsRequest, CreateFlightCommand>()
         .IgnoreNullValues(true);
-    
+
+        config.NewConfig<(int id, UpdateFlightStatusRequest request), UpdateFlightStatusCommand>()
+        .Map(dest => dest.Id, src => src.id)
+        .Map(dest => dest.Status, src => src.request.Status);
     }
 }
