@@ -1,5 +1,5 @@
 using Flights.Application.Common.Interfaces.SqlServer;
-using Flights.Application.Flights.Queries.Common;
+using Flights.Application.Flights.Common;
 using Flights.Domain.Enums;
 using MediatR;
 

@@ -13,6 +13,12 @@ public class FlightRepository : IFlightRepository
         _context = context;
     }
 
+    public async Task AddFlight(Flight flight)
+    {
+        _context.Add(flight);
+        await _context.SaveChangesAsync();
+    }
+
     public async Task<IEnumerable<Flight>> GetFlightsByDestinationAndOrOrigin(string? destination, string? origin)
     {
         IQueryable<Flight> flights = _context.Flights;

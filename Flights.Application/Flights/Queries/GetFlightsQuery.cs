@@ -1,4 +1,4 @@
-using Flights.Application.Flights.Queries.Common;
+using Flights.Application.Flights.Common;
 using MediatR;
 
 namespace Flights.Application.Flights.Queries;

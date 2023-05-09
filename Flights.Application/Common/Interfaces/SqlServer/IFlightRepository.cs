@@ -5,4 +5,5 @@ namespace Flights.Application.Common.Interfaces.SqlServer;
 public interface IFlightRepository
 {
     Task<IEnumerable<Flight>> GetFlightsByDestinationAndOrOrigin(string? destination, string? origin); 
+    Task AddFlight(Flight flight);
 }

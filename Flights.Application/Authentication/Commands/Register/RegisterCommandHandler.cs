@@ -32,7 +32,7 @@ public class RegisterCommandHandler : IRequestHandler<RegisterCommand, Authentic
         {
             Username = request.Username,
             Password = _passwordHashingService.GetPasswordHash(request.Password), // convert to hash
-            RoleId = 1
+            RoleId = 2
         };
 
         await _userRepository.Add(user);

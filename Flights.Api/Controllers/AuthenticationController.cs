@@ -21,7 +21,7 @@ public class AuthenticationController: ControllerBase
     }
 
     [Route("register")]
-    public async Task<IActionResult> RegisterAsync(RegisterRequest request)
+    public async Task<IActionResult> RegisterAsync([FromBody] RegisterRequest request)
     {
         var command = _mapper.Map<RegisterCommand>(request);
         var result = await _mediator.Send(command);
@@ -30,7 +30,7 @@ public class AuthenticationController: ControllerBase
     }
 
     [Route("login")]
-    public async Task<IActionResult> Login(LoginRequest request)
+    public async Task<IActionResult> Login([FromBody] LoginRequest request)
     {
         var query = _mapper.Map<LoginQuery>(request);
         var result = await _mediator.Send(query);

@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 using MapsterMapper;
 using Flights.Contracts.Flights;
 using Flights.Application.Flights.Queries;
-using Flights.Application.Flights.Queries.Common;
+using Flights.Application.Flights.Commands;
 
 namespace Flights.Api.Controllers;
 
@@ -34,5 +34,14 @@ public class FlightController: ControllerBase
         return Ok(_mapper.Map<List<FlightDTO>>(result));
     }
 
+    [Authorize(Roles = "Moderator")]
+    [HttpPost]
+    public async Task<IActionResult> CreateFlight([FromBody] CreateFlightsRequest request)
+    {
+        var command = _mapper.Map<CreateFlightCommand>(request);
+        var result = await _mediator.Send(command);
+
+        return Ok(_mapper.Map<FlightDTO>(result));
+    }
     
 }

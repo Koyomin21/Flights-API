@@ -14,4 +14,5 @@ public class Flight : Entity
     public DateTimeOffset Departure { get; set; }
     public DateTimeOffset Arrival { get; set; }
     public FlightStatus Status { get; set; }
+
 }
