@@ -9,7 +9,7 @@ namespace Flights.Api.Controllers;
 
 [ApiController]
 [Route("api/flights")]
-[Authorize(Roles = "Moderator")]
+[Authorize]
 public class FlightController: ControllerBase
 {
     private readonly IMediator _mediator;

@@ -1,8 +1,9 @@
+using Flights.Domain.Entities;
+
 namespace Flights.Application.Authentication.Common;
 
 public record AuthenticationResult
 (
-    int Id,
-    string Username,
+    User User,
     string Token
 );

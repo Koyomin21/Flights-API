@@ -1,4 +1,5 @@
 using Flights.Application.Authentication.Common;
+using Flights.Application.Authentication.Common.Errors;
 using Flights.Application.Common.Interfaces.Authentication;
 using Flights.Application.Common.Interfaces.SqlServer;
 using Flights.Application.Common.Services;
@@ -24,16 +25,16 @@ public class LoginQueryHandler : IRequestHandler<LoginQuery, AuthenticationResul
     {
         if(_userRepository.GetUserByUsername(request.Username) is not User user) 
         {
-            throw new Exception("Invalid Credentials");
+            throw new InvalidCredentialsException();
         }
 
         if(!_passwordHashingService.IsPasswordVerified(request.Password, user.Password)) 
         {
-            throw new Exception("Invalid Credentials");
+            throw new InvalidCredentialsException();
         }
 
         var token = _jwtTokenGenerator.GenerateToken(user.Id, user.Username, user.Role.Code);
         
-        return new AuthenticationResult(user.Id, user.Username, token);
+        return new AuthenticationResult(user, token);
     }
 }

@@ -96,3 +96,6 @@ C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\System.Tex
 C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\BCrypt.Net-Next.dll
 C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\Mapster.dll
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\Mapster.Core.dll
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\Mapster.DependencyInjection.dll

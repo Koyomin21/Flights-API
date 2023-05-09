@@ -1,4 +1,5 @@
 using Flights.Application.Authentication.Common;
+using Flights.Application.Authentication.Common.Errors;
 using Flights.Application.Common.Interfaces.Authentication;
 using Flights.Application.Common.Interfaces.SqlServer;
 using Flights.Application.Common.Services;
@@ -24,7 +25,7 @@ public class RegisterCommandHandler : IRequestHandler<RegisterCommand, Authentic
     {
         if(_userRepository.GetUserByUsername(request.Username) is not null) 
         {
-            throw new Exception("Duplicate Username Error!");
+            throw new DuplicateUsernameException();
         }
 
         var user = new User
@@ -38,6 +39,6 @@ public class RegisterCommandHandler : IRequestHandler<RegisterCommand, Authentic
         
         var token = _jwtTokenGenerator.GenerateToken(user.Id, user.Username, user.Role.Code);
 
-        return new AuthenticationResult(user.Id, user.Username, token);
+        return new AuthenticationResult(user, token);
     }
 }

@@ -9,6 +9,5 @@ public record AuthenticationResponse
 (
     int Id,
     string Username,
-    string Password,
-    String Token
+    string Token
 );
