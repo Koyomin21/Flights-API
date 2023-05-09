@@ -19,7 +19,7 @@ public class JwtTokenGenerator : IJwtTokenGenerator
         _dateTimeProvider = dateTimeProvider;
         _jwtSettings = jwtOptions.Value;
     }
-    public string GenerateToken(int userId, string username)
+    public string GenerateToken(int userId, string username, string roleCode)
     {
         var signingCredentials = new SigningCredentials(
             new SymmetricSecurityKey(
@@ -31,6 +31,7 @@ public class JwtTokenGenerator : IJwtTokenGenerator
         {
             new Claim(JwtRegisteredClaimNames.UniqueName, userId.ToString()),
             new Claim(JwtRegisteredClaimNames.Name, username),
+            new Claim (ClaimTypes.Role, roleCode),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
         };
 

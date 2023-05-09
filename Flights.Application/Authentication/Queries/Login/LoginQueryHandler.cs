@@ -32,7 +32,7 @@ public class LoginQueryHandler : IRequestHandler<LoginQuery, AuthenticationResul
             throw new Exception("Invalid Credentials");
         }
 
-        var token = _jwtTokenGenerator.GenerateToken(user.Id, user.Username);
+        var token = _jwtTokenGenerator.GenerateToken(user.Id, user.Username, user.Role.Code);
         
         return new AuthenticationResult(user.Id, user.Username, token);
     }

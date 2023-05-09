@@ -1,5 +1,6 @@
 using Flights.Application.Common.Interfaces.SqlServer;
 using Flights.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace Flights.Infrastructure.SqlServer;
 
@@ -20,6 +21,6 @@ public class UserRepository : IUserRepository
 
     public User? GetUserByUsername(string username)
     {
-        return _context.Users.Where(u => u.Username == username).FirstOrDefault();
+        return _context.Users.Include(u => u.Role).Where(u => u.Username == username).FirstOrDefault();
     }
 }
