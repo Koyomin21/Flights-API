@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "RDnt2TpyM5Sm0nyByY5C/lHVemOIc2Jl8aWIEQdMDYqMrlVd3WsyKl/7LhbjH/a2AwpDaXJPCi8C48KkST8ieA==",
+  "dgSpecHash": "J5Outy2j+aBHokHbloXUiUux4eqkncGPk+/5ZLAD9AGxnERXpJ2hdOQF0ipl3uGYIEaRnq6ixsMbjl2XnrG6qw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Anuar\\Desktop\\AirAstana\\Flights\\Flights.Api\\Flights.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Anuar\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Anuar\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\Anuar\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
+    "C:\\Users\\Anuar\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
+    "C:\\Users\\Anuar\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\Anuar\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\Anuar\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Anuar\\.nuget\\packages\\mapster\\7.3.0\\mapster.7.3.0.nupkg.sha512",
     "C:\\Users\\Anuar\\.nuget\\packages\\mapster.core\\1.2.0\\mapster.core.1.2.0.nupkg.sha512",

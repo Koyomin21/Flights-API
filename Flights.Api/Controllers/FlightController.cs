@@ -19,8 +19,9 @@ public class FlightController: ControllerBase
         _mediator = mediator;
     }
 
-    [Route("test")]
-    public IActionResult Test() {
+    [HttpGet]
+    public IActionResult GetFlights() 
+    {
         return Ok("Success");
     }
 

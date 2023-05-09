@@ -1,5 +1,5 @@
 using Flights.Application.Authentication.Common;
-using Flights.Application.Authentication.Common.Errors;
+using Flights.Application.Common.Errors;
 using Flights.Application.Common.Interfaces.Authentication;
 using Flights.Application.Common.Interfaces.SqlServer;
 using Flights.Application.Common.Services;

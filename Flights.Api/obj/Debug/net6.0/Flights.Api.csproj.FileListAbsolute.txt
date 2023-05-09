@@ -99,3 +99,6 @@ C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\Microsoft.
 C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\Mapster.dll
 C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\Mapster.Core.dll
 C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\Mapster.DependencyInjection.dll
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Api\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll

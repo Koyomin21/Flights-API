@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Flights.Application.Common.Errors;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
@@ -20,6 +16,7 @@ public class ErrorController : ControllerBase
         var (statusCode, message) = exception switch
         {
             IUserDefinedException ex => ((int)ex.StatusCode, ex.ErrorMessage),
+            ValidationException ex => (StatusCodes.Status400BadRequest, ex.ValidationErrors),
             _ => (StatusCodes.Status500InternalServerError, "An unexpected error occured.")
         };
 

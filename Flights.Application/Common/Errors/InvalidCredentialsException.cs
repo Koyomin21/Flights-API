@@ -1,7 +1,6 @@
 using System.Net;
-using Flights.Application.Common.Errors;
 
-namespace Flights.Application.Authentication.Common.Errors;
+namespace Flights.Application.Common.Errors;
 
 public class InvalidCredentialsException : Exception, IUserDefinedException
 {
