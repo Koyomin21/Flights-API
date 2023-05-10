@@ -5,8 +5,7 @@ using System.Threading.Tasks;
 
 namespace Flights.Contracts.Authentication;
 
-public record RegisterRequest
-(
+public record RegisterRequest(
     string Username,
     string Password   
 );

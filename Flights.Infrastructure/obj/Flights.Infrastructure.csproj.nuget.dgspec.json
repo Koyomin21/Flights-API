@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anuar\\Desktop\\AirAstana\\Flights\\Flights.Infrastructure\\Flights.Infrastructure.csproj": {}
+    "C:\\Users\\damu1\\Desktop\\asaasas\\Flights\\Flights.Infrastructure\\Flights.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anuar\\Desktop\\AirAstana\\Flights\\Flights.Application\\Flights.Application.csproj": {
+    "C:\\Users\\damu1\\Desktop\\asaasas\\Flights\\Flights.Application\\Flights.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anuar\\Desktop\\AirAstana\\Flights\\Flights.Application\\Flights.Application.csproj",
+        "projectUniqueName": "C:\\Users\\damu1\\Desktop\\asaasas\\Flights\\Flights.Application\\Flights.Application.csproj",
         "projectName": "Flights.Application",
-        "projectPath": "C:\\Users\\Anuar\\Desktop\\AirAstana\\Flights\\Flights.Application\\Flights.Application.csproj",
-        "packagesPath": "C:\\Users\\Anuar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anuar\\Desktop\\AirAstana\\Flights\\Flights.Application\\obj\\",
+        "projectPath": "C:\\Users\\damu1\\Desktop\\asaasas\\Flights\\Flights.Application\\Flights.Application.csproj",
+        "packagesPath": "C:\\Users\\damu1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\damu1\\Desktop\\asaasas\\Flights\\Flights.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Anuar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\damu1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +25,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://cit-damu.pkgs.visualstudio.com/_packaging/DamuLibs/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Anuar\\Desktop\\AirAstana\\Flights\\Flights.Domain\\Flights.Domain.csproj": {
-                "projectPath": "C:\\Users\\Anuar\\Desktop\\AirAstana\\Flights\\Flights.Domain\\Flights.Domain.csproj"
+              "C:\\Users\\damu1\\Desktop\\asaasas\\Flights\\Flights.Domain\\Flights.Domain.csproj": {
+                "projectPath": "C:\\Users\\damu1\\Desktop\\asaasas\\Flights\\Flights.Domain\\Flights.Domain.csproj"
               }
             }
           }
@@ -89,17 +93,20 @@
         }
       }
     },
-    "C:\\Users\\Anuar\\Desktop\\AirAstana\\Flights\\Flights.Domain\\Flights.Domain.csproj": {
+    "C:\\Users\\damu1\\Desktop\\asaasas\\Flights\\Flights.Domain\\Flights.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anuar\\Desktop\\AirAstana\\Flights\\Flights.Domain\\Flights.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\damu1\\Desktop\\asaasas\\Flights\\Flights.Domain\\Flights.Domain.csproj",
         "projectName": "Flights.Domain",
-        "projectPath": "C:\\Users\\Anuar\\Desktop\\AirAstana\\Flights\\Flights.Domain\\Flights.Domain.csproj",
-        "packagesPath": "C:\\Users\\Anuar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anuar\\Desktop\\AirAstana\\Flights\\Flights.Domain\\obj\\",
+        "projectPath": "C:\\Users\\damu1\\Desktop\\asaasas\\Flights\\Flights.Domain\\Flights.Domain.csproj",
+        "packagesPath": "C:\\Users\\damu1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\damu1\\Desktop\\asaasas\\Flights\\Flights.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Anuar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\damu1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -107,7 +114,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://cit-damu.pkgs.visualstudio.com/_packaging/DamuLibs/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -144,17 +152,20 @@
         }
       }
     },
-    "C:\\Users\\Anuar\\Desktop\\AirAstana\\Flights\\Flights.Infrastructure\\Flights.Infrastructure.csproj": {
+    "C:\\Users\\damu1\\Desktop\\asaasas\\Flights\\Flights.Infrastructure\\Flights.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anuar\\Desktop\\AirAstana\\Flights\\Flights.Infrastructure\\Flights.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\damu1\\Desktop\\asaasas\\Flights\\Flights.Infrastructure\\Flights.Infrastructure.csproj",
         "projectName": "Flights.Infrastructure",
-        "projectPath": "C:\\Users\\Anuar\\Desktop\\AirAstana\\Flights\\Flights.Infrastructure\\Flights.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Anuar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anuar\\Desktop\\AirAstana\\Flights\\Flights.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\damu1\\Desktop\\asaasas\\Flights\\Flights.Infrastructure\\Flights.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\damu1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\damu1\\Desktop\\asaasas\\Flights\\Flights.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Anuar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\damu1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -162,14 +173,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://cit-damu.pkgs.visualstudio.com/_packaging/DamuLibs/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Anuar\\Desktop\\AirAstana\\Flights\\Flights.Application\\Flights.Application.csproj": {
-                "projectPath": "C:\\Users\\Anuar\\Desktop\\AirAstana\\Flights\\Flights.Application\\Flights.Application.csproj"
+              "C:\\Users\\damu1\\Desktop\\asaasas\\Flights\\Flights.Application\\Flights.Application.csproj": {
+                "projectPath": "C:\\Users\\damu1\\Desktop\\asaasas\\Flights\\Flights.Application\\Flights.Application.csproj"
               }
             }
           }

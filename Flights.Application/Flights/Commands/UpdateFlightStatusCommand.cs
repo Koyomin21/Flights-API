@@ -3,8 +3,7 @@ using MediatR;
 
 namespace Flights.Application.Flights.Commands;
 
-public record UpdateFlightStatusCommand
-(
+public record UpdateFlightStatusCommand(
     int Id,
     string Status
 ): IRequest<FlightResult>;

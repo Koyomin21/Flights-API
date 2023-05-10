@@ -3,8 +3,7 @@ using MediatR;
 
 namespace Flights.Application.Authentication.Commands.Register;
 
-public record RegisterCommand
-(
+public record RegisterCommand(
     string Username,
     string Password
 ) : IRequest<AuthenticationResult>;

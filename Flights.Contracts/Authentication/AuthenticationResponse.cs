@@ -5,8 +5,7 @@ using System.Threading.Tasks;
 
 namespace Flights.Contracts.Authentication;
 
-public record AuthenticationResponse
-(
+public record AuthenticationResponse(
     int Id,
     string Username,
     string Token

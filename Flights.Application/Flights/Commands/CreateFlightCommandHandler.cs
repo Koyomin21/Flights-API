@@ -25,8 +25,7 @@ public class CreateFlightCommandHandler : IRequestHandler<CreateFlightCommand, F
             Status = (FlightStatus)Enum.Parse(typeof(FlightStatus), command.Status)
         });
 
-        return new FlightResult
-        (
+        return new FlightResult(
             command.Origin, 
             command.Destination,
             command.Departure,

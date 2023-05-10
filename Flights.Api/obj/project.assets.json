@@ -5394,19 +5394,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Anuar\\.nuget\\packages\\": {}
+    "C:\\Users\\damu1\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Anuar\\Desktop\\AirAstana\\Flights\\Flights.Api\\Flights.Api.csproj",
+      "projectUniqueName": "C:\\Users\\damu1\\Desktop\\asaasas\\Flights\\Flights.Api\\Flights.Api.csproj",
       "projectName": "Flights.Api",
-      "projectPath": "C:\\Users\\Anuar\\Desktop\\AirAstana\\Flights\\Flights.Api\\Flights.Api.csproj",
-      "packagesPath": "C:\\Users\\Anuar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Anuar\\Desktop\\AirAstana\\Flights\\Flights.Api\\obj\\",
+      "projectPath": "C:\\Users\\damu1\\Desktop\\asaasas\\Flights\\Flights.Api\\Flights.Api.csproj",
+      "packagesPath": "C:\\Users\\damu1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\damu1\\Desktop\\asaasas\\Flights\\Flights.Api\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Anuar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\damu1\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5414,20 +5418,21 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://cit-damu.pkgs.visualstudio.com/_packaging/DamuLibs/nuget/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Anuar\\Desktop\\AirAstana\\Flights\\Flights.Application\\Flights.Application.csproj": {
-              "projectPath": "C:\\Users\\Anuar\\Desktop\\AirAstana\\Flights\\Flights.Application\\Flights.Application.csproj"
+            "C:\\Users\\damu1\\Desktop\\asaasas\\Flights\\Flights.Application\\Flights.Application.csproj": {
+              "projectPath": "C:\\Users\\damu1\\Desktop\\asaasas\\Flights\\Flights.Application\\Flights.Application.csproj"
             },
-            "C:\\Users\\Anuar\\Desktop\\AirAstana\\Flights\\Flights.Contracts\\Flights.Contracts.csproj": {
-              "projectPath": "C:\\Users\\Anuar\\Desktop\\AirAstana\\Flights\\Flights.Contracts\\Flights.Contracts.csproj"
+            "C:\\Users\\damu1\\Desktop\\asaasas\\Flights\\Flights.Contracts\\Flights.Contracts.csproj": {
+              "projectPath": "C:\\Users\\damu1\\Desktop\\asaasas\\Flights\\Flights.Contracts\\Flights.Contracts.csproj"
             },
-            "C:\\Users\\Anuar\\Desktop\\AirAstana\\Flights\\Flights.Infrastructure\\Flights.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Anuar\\Desktop\\AirAstana\\Flights\\Flights.Infrastructure\\Flights.Infrastructure.csproj"
+            "C:\\Users\\damu1\\Desktop\\asaasas\\Flights\\Flights.Infrastructure\\Flights.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\damu1\\Desktop\\asaasas\\Flights\\Flights.Infrastructure\\Flights.Infrastructure.csproj"
             }
           }
         }
@@ -5497,7 +5502,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 12.0.1 was resolved.",
+      "message": "Версия обнаруженного пакета нарушает ограничение зависимости: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 требуется MediatR (>= 11.0.0 && < 12.0.0), но в результате разрешения получена версия MediatR 12.0.1.",
       "libraryId": "MediatR",
       "targetGraphs": [
         "net6.0"
@@ -5507,7 +5512,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.WebApi.Client 4.0.20710' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "message": "Пакет \"Microsoft.AspNet.WebApi.Client 4.0.20710\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net6.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
       "libraryId": "Microsoft.AspNet.WebApi.Client",
       "targetGraphs": [
         "net6.0"
@@ -5517,7 +5522,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.WebApi.Core 4.0.20710' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "message": "Пакет \"Microsoft.AspNet.WebApi.Core 4.0.20710\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net6.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
       "libraryId": "Microsoft.AspNet.WebApi.Core",
       "targetGraphs": [
         "net6.0"
@@ -5527,7 +5532,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.Net.Http 2.0.20710' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "message": "Пакет \"Microsoft.Net.Http 2.0.20710\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net6.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
       "libraryId": "Microsoft.Net.Http",
       "targetGraphs": [
         "net6.0"
@@ -5537,7 +5542,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Newtonsoft.Json 7.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "message": "Пакет \"Newtonsoft.Json 7.0.1\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net6.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
       "libraryId": "Newtonsoft.Json",
       "targetGraphs": [
         "net6.0"
@@ -5547,7 +5552,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Swashbuckle.Core 5.6.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "message": "Пакет \"Swashbuckle.Core 5.6.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net6.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
       "libraryId": "Swashbuckle.Core",
       "targetGraphs": [
         "net6.0"

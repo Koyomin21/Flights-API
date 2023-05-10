@@ -8,7 +8,10 @@ namespace Flights.Infrastructure.SqlServer.Configurations
         public static void ConfigureRole(this ModelBuilder builder)
         {
             builder.Entity<Role>().ToTable("Role");
-            builder.Entity<Role>().HasIndex(u => u.Code).IsUnique();
+            builder.Entity<Role>()
+                .HasIndex(u => u.Code)
+                .IsUnique();
+                
             List<Role> roles = new List<Role>()
             {
                 new Role(1, "Moderator"),

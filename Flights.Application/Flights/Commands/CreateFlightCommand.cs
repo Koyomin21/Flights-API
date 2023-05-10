@@ -3,8 +3,7 @@ using MediatR;
 
 namespace Flights.Application.Flights.Commands;
 
-public record CreateFlightCommand
-(
+public record CreateFlightCommand(
     string Origin,
     string Destination,
     DateTimeOffset Departure,

@@ -10,3 +10,15 @@ C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Contracts\obj\Debug\net6.0\Flig
 C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Contracts\obj\Debug\net6.0\refint\Flights.Contracts.dll
 C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Contracts\obj\Debug\net6.0\Flights.Contracts.pdb
 C:\Users\Anuar\Desktop\AirAstana\Flights\Flights.Contracts\obj\Debug\net6.0\ref\Flights.Contracts.dll
+C:\Users\damu1\Desktop\asaasas\Flights\Flights.Contracts\bin\Debug\net6.0\Flights.Contracts.deps.json
+C:\Users\damu1\Desktop\asaasas\Flights\Flights.Contracts\bin\Debug\net6.0\Flights.Contracts.dll
+C:\Users\damu1\Desktop\asaasas\Flights\Flights.Contracts\bin\Debug\net6.0\Flights.Contracts.pdb
+C:\Users\damu1\Desktop\asaasas\Flights\Flights.Contracts\obj\Debug\net6.0\Flights.Contracts.csproj.AssemblyReference.cache
+C:\Users\damu1\Desktop\asaasas\Flights\Flights.Contracts\obj\Debug\net6.0\Flights.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\damu1\Desktop\asaasas\Flights\Flights.Contracts\obj\Debug\net6.0\Flights.Contracts.AssemblyInfoInputs.cache
+C:\Users\damu1\Desktop\asaasas\Flights\Flights.Contracts\obj\Debug\net6.0\Flights.Contracts.AssemblyInfo.cs
+C:\Users\damu1\Desktop\asaasas\Flights\Flights.Contracts\obj\Debug\net6.0\Flights.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\damu1\Desktop\asaasas\Flights\Flights.Contracts\obj\Debug\net6.0\Flights.Contracts.dll
+C:\Users\damu1\Desktop\asaasas\Flights\Flights.Contracts\obj\Debug\net6.0\refint\Flights.Contracts.dll
+C:\Users\damu1\Desktop\asaasas\Flights\Flights.Contracts\obj\Debug\net6.0\Flights.Contracts.pdb
+C:\Users\damu1\Desktop\asaasas\Flights\Flights.Contracts\obj\Debug\net6.0\ref\Flights.Contracts.dll
