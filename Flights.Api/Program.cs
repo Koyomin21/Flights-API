@@ -12,17 +12,17 @@ builder.Services
     .AddInfrastructure(builder.Configuration);
 
 
-// TODO: Add Swagger
-
 var app = builder.Build();
 
-app.UseSwagger();
-app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Flights API V1"));
-app.UseExceptionHandler("/error");
-app.UseHttpsRedirection();
-app.UseAuthentication();
-app.UseAuthorization();
+{
+    app.UseSwagger();
+    app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Flights API V1"));
+    app.UseExceptionHandler("/error");
+    app.UseHttpsRedirection();
+    app.UseAuthentication();
+    app.UseAuthorization();
 
-app.MapControllers();
+    app.MapControllers();
 
-app.Run();
+    app.Run();
+}

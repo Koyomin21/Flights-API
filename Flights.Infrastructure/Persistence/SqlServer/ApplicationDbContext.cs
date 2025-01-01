@@ -1,8 +1,8 @@
 using Flights.Domain.Entities;
-using Flights.Infrastructure.SqlServer.Configurations;
+using Flights.Infrastructure.Persistence.SqlServer.Configurations;
 using Microsoft.EntityFrameworkCore;
 
-namespace Flights.Infrastructure.SqlServer;
+namespace Flights.Infrastructure.Persistence.SqlServer;
 
 public class ApplicationDbContext: DbContext 
 {

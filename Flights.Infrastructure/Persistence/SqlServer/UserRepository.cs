@@ -2,7 +2,7 @@ using Flights.Application.Common.Interfaces.SqlServer;
 using Flights.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Flights.Infrastructure.SqlServer;
+namespace Flights.Infrastructure.Persistence.SqlServer;
 
 public class UserRepository : IUserRepository
 {
@@ -20,8 +20,8 @@ public class UserRepository : IUserRepository
         await _context.SaveChangesAsync();
     }
 
-    public async Task<User?> GetUserByUsername(string username)
+    public Task<User?> GetUserByUsername(string username)
     {
-        return await _context.Users.Include(u => u.Role).Where(u => u.Username == username).FirstOrDefaultAsync();
+        return _context.Users.Include(u => u.Role).Where(u => u.Username == username).FirstOrDefaultAsync();
     }
 }

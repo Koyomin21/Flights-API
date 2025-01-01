@@ -3,7 +3,7 @@ using MediatR;
 
 namespace Flights.Application.Flights.Queries;
 
-public record GetFlightsQuery(
+public sealed record GetFlightsQuery(
     string Origin,
     string Destination
 ): IRequest<IEnumerable<FlightResult>>;

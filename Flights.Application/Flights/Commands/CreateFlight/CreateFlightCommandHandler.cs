@@ -4,7 +4,7 @@ using Flights.Domain.Entities;
 using Flights.Domain.Enums;
 using MediatR;
 
-namespace Flights.Application.Flights.Commands;
+namespace Flights.Application.Flights.Commands.CreateFlight;
 
 public class CreateFlightCommandHandler : IRequestHandler<CreateFlightCommand, FlightResult>
 {

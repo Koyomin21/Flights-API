@@ -1,13 +1,11 @@
-using Flights.Contracts.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using MediatR;
-using Flights.Application.Authentication.Commands.Register;
-using Flights.Application.Authentication.Queries.Login;
 using Microsoft.AspNetCore.Authorization;
 using MapsterMapper;
 using Flights.Contracts.Flights;
 using Flights.Application.Flights.Queries;
-using Flights.Application.Flights.Commands;
+using Flights.Application.Flights.Commands.CreateFlight;
+using Flights.Application.Flights.Commands.UpdateFlightStatus;
 
 namespace Flights.Api.Controllers;
 

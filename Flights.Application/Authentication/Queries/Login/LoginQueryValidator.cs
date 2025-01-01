@@ -1,6 +1,4 @@
-using Flights.Application.Authentication.Common;
 using FluentValidation;
-using MediatR;
 
 namespace Flights.Application.Authentication.Queries.Login;
 

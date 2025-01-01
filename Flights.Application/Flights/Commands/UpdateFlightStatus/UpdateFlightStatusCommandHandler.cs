@@ -5,7 +5,7 @@ using Flights.Domain.Entities;
 using Flights.Domain.Enums;
 using MediatR;
 
-namespace Flights.Application.Flights.Commands;
+namespace Flights.Application.Flights.Commands.UpdateFlightStatus;
 
 public class UpdateFlightStatusCommandHandler : IRequestHandler<UpdateFlightStatusCommand, FlightResult>
 {

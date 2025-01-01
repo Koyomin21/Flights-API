@@ -1,9 +1,7 @@
-using Flights.Application.Flights.Common;
 using Flights.Domain.Enums;
 using FluentValidation;
-using MediatR;
 
-namespace Flights.Application.Flights.Commands;
+namespace Flights.Application.Flights.Commands.CreateFlight;
 
 public class CreateFlightCommandValidator : AbstractValidator<CreateFlightCommand>
 {

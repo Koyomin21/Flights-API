@@ -5,36 +5,31 @@ using Flights.Infrastructure.Services;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Flights.Infrastructure.Services.Authentication;
-using Flights.Infrastructure.SqlServer;
+using Flights.Infrastructure.Persistence.SqlServer;
 using Microsoft.EntityFrameworkCore;
 using Flights.Application.Common.Interfaces.SqlServer;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.Extensions.Options;
+using Flights.Infrastructure.Persistence;
 
 namespace Flights.Infrastructure;
 
 public static class DependencyInjection
 {
-    public static IServiceCollection AddInfrastructure(this IServiceCollection services, ConfigurationManager configuration) 
+    public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration) 
     {
         services.AddAuth(configuration);
+        services.AddPersistence(configuration);
         services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
         services.AddSingleton<IPasswordHashingService, PasswordHashingService>();
-
-        services.AddDbContext<ApplicationDbContext>(options=> options.UseSqlServer(
-            configuration.GetConnectionString("MainConnectionString"),
-            b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.GetName().Name)
-        ));
-        services.AddScoped<IUserRepository, UserRepository>();
-        services.AddScoped<IFlightRepository, FlightRepository>();
         
 
         return services;
     }
 
-    public static IServiceCollection AddAuth(this IServiceCollection services, ConfigurationManager configuration)
+    private static IServiceCollection AddAuth(this IServiceCollection services, IConfiguration configuration)
     {
         var jwtSettings = new JwtSettings();
         configuration.Bind(JwtSettings.SectionName, jwtSettings);
@@ -42,8 +37,8 @@ public static class DependencyInjection
         services.AddSingleton(Options.Create(jwtSettings));
         services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
         
-        services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme
-            ).AddJwtBearer(o => 
+        services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            .AddJwtBearer(o => 
             {
                 var key = Encoding.UTF8.GetBytes(jwtSettings.Secret);
 
@@ -60,7 +55,26 @@ public static class DependencyInjection
                 };
             });
         return services;
-        
+    }
+
+    private static void AddPersistence(this IServiceCollection services, IConfiguration configuration)
+    {
+        var persistenceOptions = new PersistenceOptions();
+        configuration.Bind(PersistenceOptions.SectionName, persistenceOptions);
+        services.AddSingleton(Options.Create(persistenceOptions));
+
+        services.AddDbContext<ApplicationDbContext>(options =>
+        {
+            options.UseSqlServer(
+                connectionString: persistenceOptions.ConnectionString,
+                sqlServerOptionsAction: sqlServerOptions =>
+                {
+                    sqlServerOptions.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.GetName().Name);
+                }
+            );
+        });
+        services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<IFlightRepository, FlightRepository>();
     }
 
 }

@@ -1,6 +1,5 @@
 using Flights.Application.Common.Interfaces.SqlServer;
 using Flights.Application.Flights.Common;
-using Flights.Domain.Enums;
 using MediatR;
 
 namespace Flights.Application.Flights.Queries;
@@ -15,7 +14,7 @@ public class GetFlightsQueryHandler : IRequestHandler<GetFlightsQuery, IEnumerab
     }
 
 
-    async Task<IEnumerable<FlightResult>> IRequestHandler<GetFlightsQuery, IEnumerable<FlightResult>>.Handle(GetFlightsQuery request, CancellationToken cancellationToken)
+    public async Task<IEnumerable<FlightResult>> Handle(GetFlightsQuery request, CancellationToken cancellationToken)
     {
         var flights = await _flightRepository.GetFlightsByDestinationAndOrOrigin(request.Destination, request.Origin);
 

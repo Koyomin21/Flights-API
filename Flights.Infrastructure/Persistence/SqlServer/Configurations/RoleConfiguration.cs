@@ -1,7 +1,7 @@
 using Flights.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Flights.Infrastructure.SqlServer.Configurations
+namespace Flights.Infrastructure.Persistence.SqlServer.Configurations
 {
     public static class RoleConfiguration
     {

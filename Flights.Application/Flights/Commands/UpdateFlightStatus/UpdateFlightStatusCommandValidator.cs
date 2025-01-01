@@ -1,9 +1,7 @@
-using Flights.Application.Flights.Common;
 using Flights.Domain.Enums;
 using FluentValidation;
-using MediatR;
 
-namespace Flights.Application.Flights.Commands;
+namespace Flights.Application.Flights.Commands.UpdateFlightStatus;
 
 public class UpdateFlightStatusCommandValidator : AbstractValidator<UpdateFlightStatusCommand>
 {

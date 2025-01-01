@@ -3,7 +3,7 @@ using Flights.Domain.Entities;
 using Flights.Domain.Enums;
 using Microsoft.EntityFrameworkCore;
 
-namespace Flights.Infrastructure.SqlServer;
+namespace Flights.Infrastructure.Persistence.SqlServer;
 
 public class FlightRepository : IFlightRepository
 {
@@ -14,15 +14,17 @@ public class FlightRepository : IFlightRepository
         _context = context;
     }
 
-    public async Task AddFlight(Flight flight)
+    public Task AddFlight(Flight flight)
     {
         _context.Add(flight);
-        await _context.SaveChangesAsync();
+        return _context.SaveChangesAsync();
     }
 
-    public async Task<Flight?> GetFlight(int id)
+    public Task<Flight?> GetFlight(int id)
     {
-        return await _context.Flights.Where(f => f.Id == id).FirstOrDefaultAsync();
+        return _context.Flights
+                    .Where(f => f.Id == id)
+                    .FirstOrDefaultAsync();
     }
 
     public async Task<IEnumerable<Flight>> GetFlightsByDestinationAndOrOrigin(string? destination, string? origin)
@@ -43,7 +45,9 @@ public class FlightRepository : IFlightRepository
 
     public async Task UpdateFlightStatus(int id, FlightStatus status)
     {
-        var flight = await _context.Flights.Where(f => f.Id == id).FirstOrDefaultAsync();
+        var flight = await _context.Flights
+            .Where(f => f.Id == id)
+            .FirstOrDefaultAsync();
         flight.Status = status;
         await _context.SaveChangesAsync();
     }

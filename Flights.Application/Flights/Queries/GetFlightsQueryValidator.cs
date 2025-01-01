@@ -1,6 +1,4 @@
-using Flights.Application.Flights.Common;
 using FluentValidation;
-using MediatR;
 
 namespace Flights.Application.Flights.Queries;
 
